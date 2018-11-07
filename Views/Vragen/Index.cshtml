@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Les>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+
+    @{
+        foreach (var Les in Model)
+        {
+            <li><a asp-action="vragen" asp-route-id="@Les.LesId">  Start Les </a></li>
+        }
+    }
+
+</ul>
+

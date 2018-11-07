@@ -1,0 +1,18 @@
+﻿@model Vraag
+@{
+    ViewData["Title"] = "Vragen";
+}
+
+<h2>Vragen</h2>
+
+<h3>@Model.Text</h3>
+
+<a asp-action="Activate" asp-route-id="@Model.VraagId">Activate</a>
+
+
+<a asp-action="Vorige" asp-route-id="@Model.VraagId">Vorige Vraag</a>
+
+<a asp-action="Volgende" asp-route-id="@Model.VraagId">Volgende Vraag</a>
+
+
+
